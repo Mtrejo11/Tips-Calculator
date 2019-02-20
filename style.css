@@ -1,0 +1,29 @@
+#user_inputs{
+    width: 20rem;
+    background-color: #FFCC80;
+    
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+
+.results{
+    font-size: 20px;
+    width: 20rem;
+    text-align: center;
+    visibility: hidden;
+    background-color: #ECEFF1;
+}
+
+.left{
+    float: left;
+    margin: auto;
+}
+
+.right{
+    float: right;
+    margin: auto;
+}

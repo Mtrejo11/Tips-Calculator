@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de Propinas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculos.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center">Calculadora de propinas</h1>
+    <br>
+    <div id="user_inputs" class="border border-secondary rounded center" >
+    <form action="">
+        <label for="">Monto</label>
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">$</span>
+                </div>
+                <input type="text"  class="form-control" id="amount" aria-describedby="basic-addon1" required>
+        </div>
+        
+        <label for="" >Porcentaje de propina</label>
+        <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">%</span>
+                </div>
+                <input type="number" min="1" max="100" step="1" id="tip"  class="form-control" aria-describedby="basic-addon1" required>
+        </div>
+        <label for="">Número de personas a repartir</label>
+        <input type="number" min="1" id="people"  class="form-control" required><br>
+        
+    </form>
+    <button id="sub" onclick="calculate()" class="btn btn-success">Calculate</button>
+    </div>
+
+    <hr>
+    <div class="center">
+        <div class="border border-secondary rounded results left">
+            <span>Total a pagar</span>
+            <hr>
+            <p id="disp_total"></p>
+
+        </div>
+
+        <div class="border border-secondary rounded results right">
+            <span>Total individual</span>
+            <hr>
+            <p id="disp_individual"></p>
+        </div>
+    </div>
+</body>
+</html>
