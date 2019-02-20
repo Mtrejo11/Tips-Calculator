@@ -1,2 +1,2 @@
 # Tips-Calculator
-BitLab Project
+BitLab Course Project
